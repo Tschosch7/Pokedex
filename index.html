@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <title>Pokedex</title>
+</head>
+<body>
+  <div class="pokedex">
+    <div class="left-container">
+      <div class="left-container__top-section">
+        <div class="top-section__blue"></div>
+        <div class="top-section__small-buttons">
+          <div class="top-section__red"></div>
+          <div class="top-section__yellow"></div>
+          <div class="top-section__green"></div>
+        </div>
+      </div>
+      <div class="left-container__main-section-container">
+        <div class="left-container__main-section">
+          <div class="main-section__white" >
+            <div class="loading-screen hide">
+              <div class="center-on-page">
+                <div class="pokeball">
+                  <div class="pokeball__button"></div>
+                </div>
+                <div class="loading-text">LOADING...</div>
+              </div>
+            </div>
+            <div class="start-menu hide">
+              <div class="start-menu__link national">
+                NATIONAL-DEX
+              </div>
+              <div class="start-menu__link kanto">
+                KANTO-DEX
+              </div>
+              <div class="start-menu__link johto">
+                JOHTO-DEX
+              </div>
+              <div class="start-menu__link hoenn">
+                HOENN-DEX
+              </div>
+              <div class="start-menu__link sinnoh">
+                SINNOH-DEX
+              </div>
+            </div>
+            <div class="main-screen__menu hide">
+            <div class="menufield ">
+              <div class="icon y-icon">Y</div>
+              <div class="searchfield__text">Search</div>
+              </div>
+            <div class="menufield">
+              <div class="icon x-icon">X</div>
+              <div class="searchfield__text">Stats</div>
+              </div>
+            <div class="menufield">
+              <div class="icon a-icon">A</A></div>
+              <div class="searchfield__text">Select</div>
+              </div>
+            <div class="menufield">
+              <div class="icon b-icon ">B</div>
+              <div class="searchfield__text">Back</div>
+              </div>
+            </div>
+            <div class="main-section__black black">
+              <div class="details-screen hide">
+             </div>
+              <div class="headline hide"></div>
+              <div class="main-screen hide"></div>
+                <div class="search__header hide">
+                <input type="text" name="" id="searchbar"  placeholder="Enter Pokemon-Name" autofocus value="" onfocus="this.value = this.value;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg>
+                </div>
+          </div>
+          </div>
+          <div class="left-container__controllers">
+            <div class="controllers__d-pad">
+              <div class="d-pad__cell top"></div>
+              <div class="d-pad__cell left"></div>
+              <div class="d-pad__cell middle"></div>
+              <div class="d-pad__cell right"></div>
+              <div class="d-pad__cell bottom"></div>
+            </div>
+            <div class="controllers__buttons">
+              <div class="buttons__button buttons__button--y">Y</div>
+              <div class="buttons__button buttons__button--x">X</div>
+              <div class="buttons__button buttons__button--a">A</div>
+              <div class="buttons__button buttons__button--b">B</div>
+            </div>
+          </div>
+        </div>
+        <div class="left-container__right">
+          <div class="left-container__hinge"></div>
+          <div class="left-container__hinge"></div>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="right-container__black">
+        <div class="right-container__screen hide">
+          <div class="headline hide">Filter by Type</div>
+          <div class="filter__section">
+          <select name="type1" class="hide">
+            <option>Reise zum Mond</option>
+            <option>Rote Winterschuhe</option>
+            <option>Neues iPhone</option>
+            <option>Big Bang</option>
+            <option>Altes Fahrrad</option>
+         </select>
+         <select name="type2" class="hide">
+          <option>Reise zum Mond</option>
+          <option>Rote Winterschuhe</option>
+          <option>Neues iPhone</option>
+          <option>Big Bang</option>
+          <option>Altes Fahrrad</option>
+       </select>
+      </div>
+          <figure class="pokedex-logo__wrapper">
+            <img src="https://www.pokewiki.de/images/4/4b/Pok%C3%A9dex_logo.png" alt="POKEDEX" class="pokedex-logo"> 
+            <div class="pokeball-small">
+              <div class="pokeball__button-small"></div>
+            </div>
+            <div class="textbox">Pokeball design: <a href="https://codepen.io/raubaca/pen/obaZmG">https://codepen.io/raubaca/pen/obaZmG</a></div>
+            <div class="textbox">Pokedex design: <a href="https://www.youtube.com/watch?v=wXjSaZb67n8&ab_channel=JustinKim">https://www.youtube.com/watch?v=wXjSaZb67n8&ab_channel=JustinKim</a></div>
+          </figure>
+        <div class="filter__right-screen hide">
+          <div class="filter__screen">
+            <div class="headline filter__headline">Filter By Type</div>
+            <div class="filter__type--wrapper">
+              <div class="filter-type poke-type normal">normal</div>
+              <div class="filter-type poke-type fighting">fighting</div>
+              <div class="filter-type poke-type flying">flying</div>
+              <div class="filter-type poke-type poison">poison</div>
+              <div class="filter-type poke-type ground">ground</div>
+              <div class="filter-type poke-type rock">rock</div>
+              <div class="filter-type poke-type bug">bug</div>
+              <div class="filter-type poke-type ghost">ghost</div>
+              <div class="filter-type poke-type steel">steel</div>
+              <div class="filter-type poke-type fire">fire</div>
+              <div class="filter-type poke-type water">water</div>
+              <div class="filter-type poke-type grass">grass</div>
+              <div class="filter-type poke-type electric">electric</div>
+              <div class="filter-type poke-type psychic">psychic</div>
+              <div class="filter-type poke-type ice">ice</div>
+              <div class="filter-type poke-type dragon">dragon</div>
+              <div class="filter-type poke-type dark">dark</div>
+              <div class="filter-type poke-type fairy">fairy</div>
+            </div>
+        </div>
+        </div>
+        <div class="nav hide">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+            <div class="poke-id__wrapper hide">
+              <div class="poke-name"></div>
+            </div>
+            <div class="right-screen__middle hide">
+              <div class="right-screen__middle--left">
+                <div class="front-img__right-screen__wrapper">
+                <img src="" alt="" class="front-img__right-screen">
+              </div>
+            </div>
+              <div class="right-screen__middle--right">
+            <div class="poke-type__wrapper">
+                <div class="poke-type1"></div>
+              <div class="poke-type2"></div>
+            </div>
+            <div class="height-weight__wrapper">
+              <div class="height"></div>
+              <div class="HT">HT</div>
+              <div class="weight"></div>
+              <div class="WT">WT</div>
+            </div>
+          </div>
+        </div>
+            <div class="poke-description__wrapper hide">
+            </div>
+        </div>
+      </div>
+      <div class="right-container__buttons">
+        <div class="left-button">Prev</div>
+        <div class="right-button">Next</div>
+      </div>
+      <div class="right-container__start-button">
+        <div class="start-button">
+          <i class="fa fa-power-off"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
