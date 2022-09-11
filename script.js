@@ -52,6 +52,11 @@ const johto = document.querySelector('.johto')
 const hoenn = document.querySelector('.hoenn')
 const pokedexLogoWrapper = document.querySelector('.pokedex-logo__wrapper')
 const loadingScreen = document.querySelector('.loading-screen')
+const arrowLeft = document.querySelector('.fa-arrow-left')
+const a = document.querySelector('.a')
+const b = document.querySelector('.b')
+const x = document.querySelector('.x')
+const y = document.querySelector('.y')
 
 //get all the data from the api
 
@@ -434,6 +439,8 @@ function turnOnOff() {
       bClick()
       bClick()
     disableFunctions = true
+    loadingScreen.classList.add('hide')
+    mainScreenMenu.classList.add('hide')
     searchHeader.classList.add('hide')
     searchIcon.classList.add('hide')
     searchBar.classList.add('hide')
@@ -1076,6 +1083,22 @@ national.addEventListener('click', getNationalDexData)
 johto.addEventListener('click', getJohtoDexData)
 hoenn.addEventListener('click', getHoennDexData)
 sinnoh.addEventListener('click', getSinnohDexData)
+
+arrowLeft.addEventListener('click',arrowFunction)
+
+a.addEventListener('click', aClick)
+b.addEventListener('click', bClick)
+x.addEventListener('click', xClick)
+y.addEventListener('click', yClick)
+
+function arrowFunction() {
+  bClick()
+  bClick()
+  bClick()
+  bClick()
+  bClick()
+}
+
 
 
 function getBackToMenu() {
